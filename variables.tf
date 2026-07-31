@@ -13,6 +13,11 @@ variable "vpc_cidr" {
 }
 
 variable "vpc_tags" {
-    type = map
+    type = map(string)
+    default = {}
+}
+
+variable "igw_tags" {
+    type = map(string)
     default = {}
 }
